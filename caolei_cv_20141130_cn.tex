@@ -1,0 +1,93 @@
+% !Mode:: "TeX:UTF-8"
+% +-----------------------------------------------------------------------------
+% | File: resume-zh
+% | Author: huxuan
+% | E-mail: i(at)huxuan.org
+% | Created: 2012-12-18
+% | Last modified: 2013-03-16
+% | Description:
+% |     A Chinese Resume Example in LaTeX based on resumecls
+% |
+% | Copyrgiht (c) 2012-2013 by huxuan. All rights reserved.
+% +-----------------------------------------------------------------------------
+
+\documentclass[zh,color]{resumecls}
+
+\name{曹磊}
+\organization{高级软件设计工程师}
+\address{微策略软件（杭州）有限公司，西湖区文二路391号}
+\mobile{+86 139 6710 4554}
+\mail{jslhcl@gmail.com}
+\homepage{https://github.com/jslhcl}
+% \resumeurl{http://example.com/resume-zh.pdf}
+
+\begin{document}
+
+\begin{table}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{工作及项目经历}
+\entry{2em}{Xp{8em}}{
+    \heiti{微策略软件}，高级软件设计工程师 &2010.8 - 现在 \\
+}
+\entry{4em}{X}{
+用于数据分析和可视化的多平台商务智能软件的主要程序员：\\
+\textbf{MicroStrategy Desktop }Windows和Mac版，负责部分界面和控制器工作（用于获取后端数据），修复了多个发行版/特定机器/多用户环境下的程序崩溃\\
+\textbf{MicroStrategy} HTML5版本，后端核心设计和开发者，为前端提供JSON和REST-like API，提高了系统的稳定性和效率（JSON大小减小了约15\%）\\
+\textbf{MicroStrategy Mobile} iOS app，前端核心开发者，维护产品逻辑层，为GUI提供数据模型；实现Facebook Native登录模块，为产品提供更快更安全的登录模块\\
+\textbf{MicroStrategy Mobile} Android app，前端主要开发者，维护产品逻辑层，为GUI提供数据模型。
+}
+
+\entry{2em}{Xp{8em}}{
+    \heiti{TREC视频检索评测竞赛(TRECVID)} &2008.5 - 2009.9 \\
+}
+\entry{4em}{X}{
+负责底层图片特征提取，分析，以及分类器融合方法的研究。\\
+这是TRECVID的底层工作，提供了识别性很强的图片特征和分类器。通过对不同类别的特征进行分析以及对分类器融合的深入研究，提高了最终的识别效果和性能。
+}
+
+\entry{2em}{Xp{8em}}{
+    \heiti{中国视频搜索技术研究（国家985项目据）} &2007.10 - 2008.5 \\
+}
+\entry{4em}{X}{
+从包含视频的页面中解析视频URL。主要方法包括分析视频页面HTML源码，嗅探网络包以及异步可插入协议(asynchronous pluggable protocols)\\
+对已有方法做了广泛调研，使用新的技术解析视频URL,并完成Demo程序
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{教育经历}
+\entry{4em}{lXXX}{
+硕士 & 计算机应用专业 & 北京大学 & 2007 - 2010 \\
+学士(GPA 4.36/5) & 计算机科学与技术系 & 南京大学 & 2003 - 2007
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{专业技能}
+\entry{4em}{lX}{
+  熟悉 & C/C++, Matlab \\
+  掌握 & Java, Objective-C, JavaScript, C++/CLI, ActionScript, LaTex, AWK, Scheme
+}
+
+\entry{4em}{X}{
+ 2007年开始使用\textbf{Linux}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{获得荣誉}
+\entry{4em}{Xr}{
+2013 MicroStrategy 黑客马拉松 入围决赛 & 2013.12 \\
+2011 MicroStrategy 最佳新人 & 2012.1 \\
+TRECVID 2009 (一个国际视频检索竞赛) 第二名 & 2009.10 \\
+南京大学人民奖学金一等奖 & 2005 - 2006 \\
+中国大学生数学建模竞赛国家二等奖 & 2005.10
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{table}
+\end{document}
