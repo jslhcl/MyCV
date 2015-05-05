@@ -1,0 +1,198 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2011-2012 Geniusy <geniusy.jiang@gmail.com>
+% http://www.geniusy.com
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage[top=0.5in, bottom=0.1in, left=1in, right=1in]{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+
+% Set your name here
+\def\name{Lei Cao}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+% \def\footerlink{http://www.geniusy.com/jiangbo-cv.pdf}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {finance, economics, statistics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+%\geometry{
+%  body={6.5in, 9in},
+%  left=1.0in,
+%  top=0.8in
+%}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0pt}
+  }
+}{
+  \end{list}
+}
+
+\renewcommand\arraystretch{1.35}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.2in}
+\begin{minipage}{0.55\linewidth}
+  Senior Software Design Engineer \\
+  MicroStrategy Inc.
+  No.391, Wen'er Road, Xihu District\\
+  Hangzhou, Zhejiang, PR. China 310012
+\end{minipage}
+\vspace{0.2in}
+\begin{minipage}{0.40\linewidth}
+  Phone: ($+$86) 139-6710-4554 \\
+  Email: \href{mailto:jslhcl@gmail.com}{\tt jslhcl@gmail.com} \\
+  Github: \href{https://github.com/jslhcl/}{\tt https://github.com/jslhcl/} 
+\end{minipage}
+
+\rule{16.8cm}{0.1em}
+
+\vspace{-1.5em}
+\section*{Work \& Project Experience}
+\subsection*{Work in MicroStrategy, 2010.8 - Present:\hfill Senior Software Design Engineer}
+\begin{itemize}
+%\item Work on MicroStrategy Mobile client/Server side 
+%\item Client is deployed in four platforms: flash, iOS, android and HTML5 (javascript), MVC architecture, be in charge of model part
+%\item Around 80,000 line codes in each platform. Familiar with andrioid/iOS development
+%\item Server side: handle JSON generation and requests sent from Client
+\item Key programmer on the Business Intelligence software for data analysis and visualization on multiple platforms:
+\item \textbf{MicroStrategy Desktop} in Windows and Mac version. On some GUI feature and controller work accessing backend data. Fixed several crash in release build/specific machine/multiple users case.
+\item \textbf{MicroStrategy} in HTML5 version. Key designer and programmer on server side, which generates JSON and provides REST-like API for clients. Made big progress in program stability and performance (JSON size is reduced by 15\%).
+\item \textbf{MicroStrategy Mobile} in Android app. Client side programmer on Object Model and data organization.
+\item \textbf{MicroStrategy Mobile} in iOS app. Client side key programmer on Object Model and data organization.
+\item Facebook native login for \textbf{MicroStrategy Mobile} which made the login process faster and safer.
+\end{itemize}
+\subsection*{The contest of TREC Video Retrieval Evaluation (TRECVID), 2008.05 - 2009.9}
+\begin{itemize}
+\item Be in charge of the low-level feature extraction and analysis, and the study of feature and classifier fusion methods
+\item This is the base work of TRECVID, which provides more distinguishable image features for classifiers. Analyzing and improving the features by different concepts, and do deep research on the fusion of classifers to improve the final performance. 
+\end{itemize}
+\subsection*{Research of Chinese video search technology (National 985 project), 2007.10 - 2008.05}
+\begin{itemize}
+\item Parsing the URL of videos from the web pages containing videos. The main methods include analyzing the HTML code of web pages, sniffing data packets passing through gateway and asynchronous pluggable prototocols.
+\item Do a wide survey of existing methods, use a new techique to parse video URL, and finish the Demo.
+\end{itemize}
+%\vspace{-1.5em}
+%\section*{Personal}
+%\begin{itemize
+%\item Gender: Male\qquad Age: 26 \qquad Nationality: Chinese \qquad Place of Birth: Chongqing
+%\end{itemize}
+
+
+%\section*{Research Interest}
+%\begin{itemize}
+%\item Corporate Finance, Capital Market
+%\end{itemize}
+
+%\section*{Working \& Project Experience}
+%\begin{itemize}
+%\item Instructor, {\it Introduction to Statistics} (Junior College Student level), Dec. 2011.
+%\item Teaching Assistant, {\it Corporate Finance} (3rd undergraduate, In English), Fall, 2011.
+%\item Teaching Assistant, {\it Fundamentals of Management} (2nd undergraduate, In English), Spring, 2011.
+%\item Teaching Assistant, {\it Accounting} (2nd undergraduate, In English), Fall, 2010.
+%\end{itemize}
+
+\rule{16.8cm}{0.1em}
+
+\vspace{-1.5em}
+\section*{Education}
+\begin{itemize}
+  \item M.S. Application of Computer Software, Peking University, 2007-2010.
+  \item Bachelor (GPA 4.36/5). Computer Science \& Technology , Nanjing University, 2003-2007.
+\end{itemize}
+
+\rule{16.8cm}{0.1em}
+
+\vspace{-1.5em}
+\section*{Personal Skills}
+\begin{itemize}
+\item \textbf{Language}: (Good) C/C++, Matlab; (Basic) Java, Objective-C, JavaScript, C++/CLI, ActionScript, Latex, AWK, Python, Scheme
+\item \textbf{Linux} user since 2007
+%\subsection*{Languages:}
+%\begin{itemize}
+%\item \textbf{For Programming:} C (Good), Visual Basic (Good), Pascal(Basic)
+%\item \textbf{For Website Service:} HTML+CSS (Good), PHP (Basic), ASP (Basic)
+%\end{itemize}
+%
+%\subsection*{Softwares:}
+%\begin{itemize}
+%\item \textbf{Mathematics and Statistics Softwares:} SAS (Excellent), Stata (Excellent), Eviews (Excellent), Matlab (Basic), R (Basic)
+%\item \textbf{Database Management System:} SQL Server (Good), Visual FoxPro (Good), MySQL (Good), Access (Good)
+%\item \textbf{Graphics:} Photoshop (Basic), Flash (Basic)
+%\item \textbf{Office and Word Processing:} \LaTeX\ (Excellent), Word (Excellent), Excel (Excellent), PowerPoint (Excellent), Dreamweaver (Good)
+%\end{itemize}
+%
+%\subsection*{Operating Systems:}
+%\begin{itemize}
+%\item \textbf{Windows:} familiar with every version, both server and desktop one
+%\item \textbf{Mac OS:} major OS since 2008
+%\item \textbf{Linux:} familiar with various distributions, both server and desktop version
+\end{itemize}
+
+\rule{16.8cm}{0.1em}
+
+\vspace{-1.5em}
+\section*{Awards}
+\begin{itemize}
+\item Finalist in 2013 MicroStrategy Hackathon, 2013.12
+\item Rookie Of the Year (best of the new hires of the year), MicroStrategy Inc., 2012.1
+\item Second Place in TRECVID 2009 (an International video retrieval contest), 2009.10
+\item First-Class People's Scholarship, Nanjing University, 2005-2006
+\item National Second Prize, China Undergraduate Mathematical Contest in Modelling, 2005.10
+\end{itemize}
+
+\end{document}
