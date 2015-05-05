@@ -3,7 +3,7 @@ My CV
 environment:
 Texlive 2012/2013
 
-use xelatex to compile:
+use xelatex to compile (pdflatex also works, but latex/dvipdfmx will make the hyperlink invalid):
 xelatex caolei_cv.tex
 
 # My CV -- Chinese version
