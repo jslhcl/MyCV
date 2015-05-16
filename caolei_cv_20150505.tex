@@ -1,0 +1,189 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2011-2012 Geniusy <geniusy.jiang@gmail.com>
+% http://www.geniusy.com
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage[top=0.5in, bottom=0.1in, left=1in, right=1in]{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+
+% Set your name here
+\def\name{Lei Cao}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+% \def\footerlink{http://www.geniusy.com/jiangbo-cv.pdf}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = red,
+  pdfauthor = {\name},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+%\geometry{
+%  body={6.5in, 9in},
+%  left=1.0in,
+%  top=0.8in
+%}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+\begin{list}{*}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0pt}
+  }
+}{
+  \end{list}
+}
+
+%\let\oldenumerate\enumerate
+%\renewcommand{\enumerate}{
+%	\oldenumerate
+%	\setlength{\leftmargin}{1.5em}
+%	\setlength{\itemsep}{0pt}
+%}
+
+\renewcommand\arraystretch{1.35}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.1in}
+\begin{minipage}{0.55\linewidth}
+  Senior Software Design Engineer \\
+  Github: \url{https://github.com/jslhcl/} 
+\end{minipage}
+\vspace{0.1in}
+\begin{minipage}{0.40\linewidth}
+  Phone: ($+$86) 139-6710-4554 \\
+  Email: \href{mailto:jslhcl@gmail.com}{\tt jslhcl@gmail.com} \\
+\end{minipage}
+
+\rule{16.8cm}{0.1em}
+
+% \vspace{-2em}
+\vspace{-1em}
+\section*{Work \& Project Experience}
+\subsection*{\textbf{MicroStrategy, 2010.8 - Present:\hfill Senior Software Design Engineer}}
+\begin{itemize}
+%\item Work on MicroStrategy Mobile client/Server side 
+%\item Client is deployed in four platforms: flash, iOS, android and HTML5 (javascript), MVC architecture, be in charge of model part
+%\item Around 80,000 line codes in each platform. Familiar with andrioid/iOS development
+%\item Server side: handle JSON generation and requests sent from Client
+\item Key programmer on the Business Intelligence software for data analysis and visualization on multiple platforms, and Key programmer on the Infrastructure of the company:
+\item Migrated SCM tool from ClearCase to Git. Customize Git for multi-repo management(\href{https://source.android.com/source/using-repo.html}{google-repo}) and binary optimization(\href{https://github.com/cyaninc/git-fat}{git-fat}), contributed issues fixing for the open source migrating tool(\href{https://github.com/charleso/git-cc/issues/57}{git-cc}) 
+\item \href{http://www.microstrategy.com/us/analytics/desktop}{\textbf{MicroStrategy Desktop}} in Windows and Mac version, which is a desktop app for data analysis and visualization using \href{https://bitbucket.org/chromiumembedded/cef}{CEF}/UIWebView from multiple data source(local file/database/Internet/our server). Worked on almost all aspects of this product and Fixed several critical crash in release build/specific machine/multiple users case.
+\item \href{http://www.microstrategy.com/us/analytics}{\textbf{MicroStrategy}} in HTML5 version. Key designer and programmer on server side, which generates JSON and provides REST-like API for clients. Made big progress in program stability and performance (JSON size is reduced by 15\%).
+\item \href{http://www.microstrategy.com/us/mobile}{\textbf{MicroStrategy Mobile}} in iOS \& Android app. Client side programmer on the cross-platform C/C++ code (accessed by Objective C and JNI respectively), to provide platform \& backward compatibility, and support all kinds of user manipulations. Also some GUI feature such as \href{https://developers.facebook.com/docs/facebook-login/ios/}{Facebook Native login} to make the login process faster and safer.
+\item Investigated \& fixed 1000+ issues on iOS/Android/Flex/Desktop App, experienced debugging skills and good understanding on the BI workflow in multi-platforms  
+\end{itemize}
+
+%\subsection*{The contest of TREC Video Retrieval Evaluation (TRECVID), 2008.05 - 2009.9}
+%\begin{itemize}
+%\item Be in charge of the low-level feature extraction and analysis, and the study of feature and classifier fusion methods
+%\item This is the base work of TRECVID, which provides more distinguishable image features for classifiers. Analyzing and improving the features by different concepts, and do deep research on the fusion of classifers to improve the final performance. 
+%\end{itemize}
+
+\subsection*{\textbf{Research of Chinese video search technology (National 985 project), 2007.10 - 2008.05}}
+\begin{itemize}
+\item Obtained the URL of videos from the web pages containing videos. The main methods including analyzing the HTML code of web pages, sniffing data packets passing through gateway and asynchronous pluggable protocols.
+\item Do a wide survey of existing methods, use a \href{https://msdn.microsoft.com/en-us/library/aa767743%28v=vs.85%29.aspx}{new techique} to parse video URL, and finish the Demo.
+\end{itemize}
+
+
+\rule{16.8cm}{0.1em}
+
+%\vspace{-1.5em}
+\vspace{-1em}
+\section*{Education}
+\begin{itemize}
+	\item \textbf{Peking University}, M.S. Application of Computer Software, 2007-2010.
+	\item \textbf{Nanjing University}, Bachelor (GPA 4.36/5). Computer Science \& Technology, 2003-2007.
+\end{itemize}
+
+\rule{16.8cm}{0.1em}
+
+%\vspace{-1.5em}
+\vspace{-1em}
+\section*{Personal Skills}
+\begin{itemize}
+\item \textbf{Language}: (proficient) C/C++, Matlab; (Good) Java, Python, Objective-C, JavaScript, \LaTeX, C++/CLI, ActionScript, Scheme
+\item \textbf{Linux} user since 2007, familiar with common tools such as Bash, AWK, Sed, etc
+%\subsection*{Languages:}
+%\begin{itemize}
+%\item \textbf{For Programming:} C (Good), Visual Basic (Good), Pascal(Basic)
+%\item \textbf{For Website Service:} HTML+CSS (Good), PHP (Basic), ASP (Basic)
+%\end{itemize}
+%
+%\subsection*{Softwares:}
+%\begin{itemize}
+%\item \textbf{Mathematics and Statistics Softwares:} SAS (Excellent), Stata (Excellent), Eviews (Excellent), Matlab (Basic), R (Basic)
+%\item \textbf{Database Management System:} SQL Server (Good), Visual FoxPro (Good), MySQL (Good), Access (Good)
+%\item \textbf{Graphics:} Photoshop (Basic), Flash (Basic)
+%\item \textbf{Office and Word Processing:} \LaTeX\ (Excellent), Word (Excellent), Excel (Excellent), PowerPoint (Excellent), Dreamweaver (Good)
+%\end{itemize}
+%
+%\subsection*{Operating Systems:}
+%\begin{itemize}
+%\item \textbf{Windows:} familiar with every version, both server and desktop one
+%\item \textbf{Mac OS:} major OS since 2008
+%\item \textbf{Linux:} familiar with various distributions, both server and desktop version
+\end{itemize}
+
+\rule{16.8cm}{0.1em}
+
+%\vspace{-1.5em}
+\vspace{-1em}
+\section*{Awards}
+\begin{itemize}
+\item Finalist in 2013 MicroStrategy Hackathon, 2013.12
+\item Rookie Of the Year (best of the new hires of the year), MicroStrategy Inc., 2012.1
+\item Second Place in TRECVID 2009 (an International video retrieval contest), 2009.10
+\item First-Class People's Scholarship, Nanjing University, 2005-2006
+\item National Second Prize, China Undergraduate Mathematical Contest in Modelling, 2005.10
+\end{itemize}
+
+\end{document}
