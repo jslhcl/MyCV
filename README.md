@@ -14,7 +14,12 @@ environment:
 
 Texlive 2013/2014
 
+1. Need to configure Adobe font first...
+
 1. commented out line 94 and 95 of the template resumecls.cls under $TexLiveInstallPath/2014/texmf-dist/tex/xelatex/resumecls, in order to prevent printing "Last modified" in the last line of my CV.
 
-2. use xelatex to compile:
+1. use xelatex to compile:
+
 xelatex caolei_cv_20141130_cn.tex 
+
+1. compile error in cygwin: I can't write on file 'xxx.pdf' but OK in Windows native cmd.exe
