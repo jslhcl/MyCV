@@ -20,6 +20,8 @@ Texlive 2013/2014
 
 1. use xelatex to compile:
 
-xelatex caolei_cv_20141130_cn.tex 
+	```bash
+	xelatex caolei_cv_20141130_cn.tex
+	``` 
 
 1. compile error in cygwin: I can't write on file 'xxx.pdf' but OK in Windows native cmd.exe
