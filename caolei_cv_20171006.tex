@@ -1,0 +1,161 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2011-2012 Geniusy <geniusy.jiang@gmail.com>
+% http://www.geniusy.com
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage[top=0.5in, bottom=0.1in, left=1in, right=1in]{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+
+% Set your name here
+\def\name{Lei Cao}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+% \def\footerlink{http://www.geniusy.com/jiangbo-cv.pdf}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+%\geometry{
+%  body={6.5in, 9in},
+%  left=1.0in,
+%  top=0.8in
+%}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+\begin{list}{*}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0pt}
+  }
+}{
+  \end{list}
+}
+
+%\let\oldenumerate\enumerate
+%\renewcommand{\enumerate}{
+%	\oldenumerate
+%	\setlength{\leftmargin}{1.5em}
+%	\setlength{\itemsep}{0pt}
+%}
+
+\renewcommand\arraystretch{1.35}
+
+\begin{document}
+
+% Place name at left
+% {\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\begin{minipage}{0.55\linewidth}
+  {\huge \name}
+\end{minipage}
+\begin{minipage}{0.40\linewidth}
+  Phone: ($+$86) 139-6710-4554 \\
+  Email: \href{mailto:jslhcl@gmail.com}{\tt jslhcl@gmail.com} \\
+  Github: \url{https://github.com/jslhcl/} 
+\end{minipage}
+
+\rule{16.8cm}{0.1em}
+
+\vspace{-1em}
+\section*{Work \& Project Experience}
+
+\subsection*{\textbf{Microsoft, 2015.8 - Present:\hfill SDE II}}
+Work in SharePoint team to implement and maintain this web application platform with C\#
+\begin{itemize}
+\item Lead SharePoint Hybrid team on various Hybrid feature design and implementation to contribute more SPO MAU.
+\item Designed and implemented a tool to migrate files from local file system and SharePoint onPrem libraries to SharePoint Online, to provide stable service for huge data with good performance
+\item Created an internal website on top of SharePoint with jQuery
+\item Implemented app launcher in SharePoint 2013 for users to quickly access different sites with C\#, JavaScript and CSS.
+\item Designed and implemented dashboards to monitor the usage of SharePoint features of our team by quering from Cosmos (Microsoft's BigData analysis platform)
+\end{itemize}
+%
+\subsection*{\textbf{MicroStrategy, 2010.8 - 2015.7:\hfill Principal Software Engineer}}
+Key programmer on the infrastructure team of the company:
+\begin{itemize}
+\item Migrated SCM tool from ClearCase to Git. Customize Git for multi-repo management(\href{https://source.android.com/source/using-repo.html}{google-repo}) and binary optimization(\href{https://github.com/cyaninc/git-fat}{git-fat}), contributed issues fixing for the open source migrating tool(\href{https://github.com/charleso/git-cc/issues/57}{git-cc}) 
+\end{itemize}
+Key programmer on the Business Intelligence software for data analysis and visualization on multiple platforms:
+\begin{itemize}
+\item \href{http://www.microstrategy.com/us/analytics/desktop}{\textbf{MicroStrategy Desktop}} in Windows and Mac version, which is a desktop app for data analysis and visualization using \href{https://bitbucket.org/chromiumembedded/cef}{CEF}/UIWebView from multiple data source(local file/database/Internet/our server). Worked on almost all aspects of this product and Fixed several critical crash in release build/specific machine/multiple users case.
+\item \href{http://www.microstrategy.com/us/analytics}{\textbf{MicroStrategy}} in HTML5 version. Key designer and programmer on server side, which generates JSON and provides REST-like API for clients. Made big progress in program stability and performance (JSON size is reduced by 15\%).
+\item \href{http://www.microstrategy.com/us/mobile}{\textbf{MicroStrategy Mobile}} in iOS \& Android app. Client side programmer on the cross-platform C/C++ code (accessed by Objective-C and JNI respectively), to provide platform \& backward compatibility, as well as consistent user experience, and support all kinds of user manipulations. Also some GUI feature such as \href{https://developers.facebook.com/docs/facebook-login/ios/}{Facebook Native login} to make the login process faster and safer.
+\end{itemize}
+
+\rule{16.8cm}{0.1em}
+
+%\vspace{-1.5em}
+\vspace{-1em}
+\section*{Education}
+\begin{itemize}
+	\item \textbf{Peking University}, M.S. Application of Computer Software, 2007-2010.
+	\item \textbf{Nanjing University}, Bachelor (GPA 4.36/5). Computer Science \& Technology, 2003-2007.
+\end{itemize}
+
+\rule{16.8cm}{0.1em}
+
+%\vspace{-1.5em}
+\vspace{-1em}
+\section*{Personal Skills}
+\begin{itemize}
+\item \textbf{Language}: (experienced) C/C++, C\#, Matlab; (Good) Java, Python, Objective-C, JavaScript, \LaTeX, C++/CLI, ActionScript
+\item \textbf{Linux} user since 2007, familiar with common tools such as Bash, AWK, Sed, etc
+\end{itemize}
+
+\rule{16.8cm}{0.1em}
+
+%\vspace{-1.5em}
+\vspace{-1em}
+\section*{Awards}
+\begin{itemize}
+\item Finalist in 2013 MicroStrategy Hackathon, 2013.12
+\item Rookie Of the Year (best of the new hires of the year), MicroStrategy Inc., 2012.1
+\item Second Place in TRECVID 2009 (an International video retrieval contest), 2009.10
+\end{itemize}
+
+\end{document}
